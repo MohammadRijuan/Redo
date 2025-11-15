@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --font-heading1: 60px;
+    --font-heading2: 30px;
+    --font-heading3: 22px;
+    --font-para1: 18px;
+    --font-para2: 15px;
+    --font-caption: 30px;
+    --font-label: 13px;
+    --font-links: 15px;
+    --font-display: 10px;
+    --font-base-weight: 400;
+    --font-secondary-weight: 500;
+    --font-headvig:"Hedvig Letters Serif", serif;;
+
+}
+
+html,
+body {
+    overflow-x: hidden;
+    touch-action: pan-y;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Rethink Sans', sans-serif;
+    max-width: 1280px;
+    background-color: #FFFFFF;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+}
+
+header {
+    display: none;
+}
+
+.logo {
+    padding: 30px 0 30px 32px;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 30px 32px;
+    gap: 10px;
+
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 30px 32px;
+}
+
+.side-nav a,
+.sidebar-footer a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    opacity: 1;
+    font-weight: var(--font-secondary-weight);
+}
+
+
+main {
+    margin-left: 250px;
+    overflow-y: auto;
+}
+
+.guidelines {
+    padding: 32px 32px 120px 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.guide {
+    line-height: 110%;
+    letter-spacing: -0.01%;
+    font-weight: 500;
+    font-size: var(--font-heading1);
+    max-width: 419px;
+    margin-top: 0;
+}
+
+.guide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.guide-para {
+    color: #575757;
+    font-size: var(--font-para1);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    font-weight: var(--font-secondary-weight);
+    opacity: 1;
+    max-width: 515px;
+    margin-top: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+
+/* content */
+
+.content {
+    padding: 32px 32px 128px 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.c-title {
+    font-size: 30px;
+    font-weight: var(--font-secondary-weight);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+}
+
+.c-list {
+    width: 427px;
+    list-style: none;
+}
+
+.item {
+    counter-increment: item;
+    font-size: var(--font-heading2);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    font-weight: var(--font-secondary-weight);
+    position: relative;
+}
+
+.c-list .item::before {
+    content: counter(item, decimal-leading-zero);
+    position: absolute;
+    left: -45px;
+    top: 0;
+    font-weight: 500;
+    color: #575757;
+}
+
+/* strategy */
+.strategy {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px 120px 32px;
+}
+
+.strate-title {
+    width: 467px;
+    font-size: var(--font-heading1);
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    font-weight: var(--font-secondary-weight);
+    margin: 0;
+}
+
+span {
+    color: #F45F00;
+}
+
+.strate-content {
+    max-width: 467px;
+}
+
+
+/* personality */
+.personality {
+    padding: 32px 32px 120px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.personality-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* tone */
+
+.tone-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+.tone-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 467px;
+
+}
+
+.tone {
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.h6 {
+    font-size: var(--font-para2);
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+.sample-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.s-card-container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.s-card {
+    max-width: 217.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/* logo section */
+.logo-container {
+    padding: 32px 32px 120px 32px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.content-i-img {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.content-i-img img {
+    height: 16px;
+}
+
+.img-content-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 30px;
+}
+
+.img-content-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 311.33px;
+}
+
+.i-p {
+    margin: 0;
+    font-size: var(--font-label);
+    font-weight: var(--font-secondary-weight);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+}
+
+
+/* color */
+.color-containers {
+    padding: 32px 32px 120px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+.color {
+    width: 229.5px;
+    height: 229.5px;
+    background-color: #FA9819;
+    border-radius: 50%;
+}
+
+.color-name {
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: var(--font-secondary-weight);
+
+}
+
+.color-code {
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-weight: var(--font-secondary-weight);
+}
+
+.color1{
+    background-color: #B6C9CF;
+    
+}
+.color2{
+    background-color: #FFFFFF;
+    border: 1px solid black;
+
+}
+.color4{
+    background-color: #48749E;
+}
+.color5{
+    background-color: #DEEEFE;
+}
+.color6{
+    background-color: #E8EBEF;
+}
+.color7{
+    background-color: #F45F00;
+}
+.color8{
+    background-color: #000000;
+}
+.color9{
+    background-color: #A3A3A3;
+}
+.color10{
+    background-color: #E5E5E5;
+}
+.color10{
+    background-color: #1E3D59;
+}
+
+
+/* gradient */
+.gradient-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    row-gap: 20px;
+    padding: 0 32px 0 32px;
+}
+
+/* typography */
+
+.typography-container{
+    padding: 32px 32px 120px 32px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.typo-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.type-container{
+    padding: 0px 32px 0px 32px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    
+}
+
+
+.primary{
+    font-size: var(--font-links);
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    font-weight: var(--font-secondary-weight);
+}
+
+.rethink{
+    font-size: var(--font-heading1);
+    margin: 0;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    font-weight: var(--font-base-weight);
+}
+
+.primar-think{
+    padding-bottom: 100px;
+}
+
+
+/* size */
+.size{
+    margin-top: 32px;
+    padding: 0 32px 0 32px;
+}
+
+.size-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+/* clear */
+.clear{
+    /* margin-bottom: 30px; */
+}
+
+.clear-title{
+    font-size: 50px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-weight: var(--font-base-weight);
+    max-width: 546px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.clear-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear-content p{
+    color: #575757;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    font-weight: var(--font-secondary-weight);
+}
+
+
+/* art */
+.art-container{
+    padding: 20px 32px 128px 32px;
+}
