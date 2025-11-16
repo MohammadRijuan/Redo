@@ -27,6 +27,7 @@ body {
     font-family: 'Rethink Sans', sans-serif;
     max-width: 1280px;
     background-color: #FFFFFF;
+    scroll-behavior: smooth;
 }
 
 .sidebar {
@@ -556,6 +557,4 @@ span {
     font-weight: var(--font-secondary-weight);
     margin: 0;
     text-decoration: none;
-
-
 }
