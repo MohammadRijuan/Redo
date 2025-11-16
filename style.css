@@ -560,6 +560,126 @@ span {
 }
 
 
+@media screen and (max-width:799px) {
+    body{
+        max-width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+    main{
+        margin-left: 0;
+    }
+    .hero img{
+        max-width: 100%;
+    }
+
+    .guidelines,.content ,.strategy{
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+    .guide{
+        font-size: 30px;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    .guide-para {
+        font-size: 16px;
+        max-width: 100% !important;
+    }
+  
+    .c-title{
+        margin: 0;
+        font-size: 24px;
+    }
+    .c-list{
+        margin-top: 0;
+    }
+    .item{
+        font-size: 24px;
+    }
+    .strate-title{
+        font-size: 30px;
+        max-width: 200px;
+    }
+    .strate-content{
+        max-width: 100%;
+        margin-top: 12px;
+    }
+    .strate-img{
+        max-width: 100%;
+    }
+    .personality-con {
+        flex-direction: column;
+    }
+    .guide-para1{
+        margin-top: 12px;
+    }
+    .personality-img{
+        max-width: 100%;
+    }
+    .tone-container {
+        flex-direction: column;
+    }
+    .tone-content{
+        gap: 24px;
+        padding-bottom: 46px;
+    }
+    .tone{
+        margin: 32px 0;
+    }
+    .personality{
+        gap: 0;
+        padding-bottom: 112px;
+    }
+    .s-card-container{
+        flex-direction: column;
+    }
+    .tone1{
+        margin-bottom: 0;
+    }
+    .s-card{
+        max-width: 100%;
+    }
+    .s-card .guide-para{
+        margin-bottom: 0;
+    }
+    .logo-container {
+        padding: 32px 20px 80px 20px;
+    }
+
+    .personality-con .guide-para{
+        max-width: 100% !important;
+    }
+
+    .logo1{
+        margin-bottom: 12px;
+    }
+    .image-content img{
+        max-width: 100%;
+    }
+    .clear1,.Secondary1,.incorrect1,.Partnerships{
+        margin-top: 0;
+    }
+    .img-content-card-container{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 16px;
+    }
+    .img-content-card{
+        max-width: 100%;
+    }
+    .color1{
+        margin-bottom: 32px;
+    }
+    .color-content{
+        max-width: 100%;
+    }
+    .color-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
 
 
 @media screen and (min-width: 800px) and (max-width: 1279px) {
@@ -675,3 +795,6 @@ span {
         align-items: flex-start;
     }
 }
+
+
+
