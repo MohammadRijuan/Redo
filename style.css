@@ -58,7 +58,7 @@ header {
 }
 
 .side-nav a,
-.sidebar-footer a {
+.sidebar-footer a, .top-menu a , .top-right a{
     text-decoration: none;
     color: #000000;
     line-height: 120%;
@@ -557,4 +557,121 @@ span {
     font-weight: var(--font-secondary-weight);
     margin: 0;
     text-decoration: none;
+}
+
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+    body{
+        max-width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+
+    header{
+        display: block;
+        padding: 0 32px 0 32px;
+    }
+    .top-nav .logo{
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 0px 14px 0px;
+    }
+    .top-right{
+        display: flex;
+        gap: 12px;
+    }
+    .top-menu{
+        margin:  0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 0px 14px 0px;
+    }
+
+
+    .hero img{
+        max-width: 100%;
+    }
+    main{
+        margin-left: 0;
+
+    }
+    .guide {
+        max-width: 352px;
+    }
+
+    .guides{
+        max-width: 388px !important;
+    }
+    
+
+    .c-title {
+        font-size: 26px;
+        width: 352px;
+    }
+    .item{
+        font-size: 26px;
+    }
+    .guide-para{
+        max-width: 352px !important;
+        font-size: 16px;
+    }
+    .c-list {
+        width: 312px;
+    }
+
+    .strate-content{
+        max-width: 352px;
+    }
+
+    .strate-title {
+        font-size: 45px;
+        max-width: 352px;
+    }
+
+    .strate-img{
+        max-width: 100%;
+    }
+
+
+    .personality-img{
+        max-width: 100%;
+    }
+
+    .image-content img{
+        max-width: 100%;
+    }
+
+    .color {
+        width: 172px;
+        height: 172px;
+    }
+
+    .gradient img{
+        max-width: 100%;
+    }
+
+    .guide-content{
+        width: 388px;
+    }
+
+    .card,.card img {
+        max-width: 100%;
+    }
+
+    .size{
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-direction: column;
+    }
+    .footer-container{
+        margin-left: 0;
+    }
+
+    .footer-1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
