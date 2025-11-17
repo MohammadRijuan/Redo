@@ -628,13 +628,13 @@ span {
         display: none;
     }
 
-    .mobile-menu {
+    /* .mobile-menu {
         display: block;
-    }
+    } */
 
     header {
         display: block;
-        position: sticky;
+        
         top: 0;
         padding: 0 32px 0 32px;
         z-index: 1000;
@@ -647,8 +647,7 @@ span {
         justify-content: space-between;
         padding: 18.08px 0;
         align-items: center;
-
-
+        position: sticky;
     }
 
     .hr-1 {
@@ -668,19 +667,22 @@ span {
         cursor: pointer;
         padding: 5px;
         font-weight: var(--font-secondary-weight);
+        /* font-weight: 600; */
         color: #000000;
+        line-height: 120%;
+        letter-spacing: -0.02em;
     }
 
     .mobile-menu {
         display: none;
         position: fixed;
         width: 100%;
-        /* position: absolute; */
+      
         flex-direction: column;
         padding: 0 20px 0 20px;
         background-color: white;
-        /* height: 100px; */
         margin-left: -8.5%;
+        z-index: 3;
         /* top: 0; */
     }
 
