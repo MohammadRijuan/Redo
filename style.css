@@ -634,7 +634,7 @@ span {
 
     header {
         display: block;
-        
+        position: sticky;
         top: 0;
         padding: 0 32px 0 32px;
         z-index: 1000;
