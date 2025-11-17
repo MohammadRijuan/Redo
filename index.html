@@ -52,12 +52,14 @@
             <a href="#art">Art Direction<span class="one">06</span></a>
         </nav>
         <div class="mobile-menu" id="mobileMenu">
+            <hr>
             <a href="#brand">Brand Strategy <span class="one">01</span></a>
-            <a href="#personality">Personality<span class="one">02</span></a>
-            <a href="#logo">Logo<span class="one">03</span></a>
-            <a href="#color">Color<span class="one">04</span></a>
-            <a href="#typography">Typography<span class="one">05</span></a>
-            <a href="#art">Art Direction<span class="one">06</span></a>
+            <a href="#personality">Personality<span class="one two">02</span></a>
+            <a href="#logo">Logo<span class="one three">03</span></a>
+            <a href="#color">Color<span class="one four">04</span></a>
+            <a href="#typography">Typography<span class="one five">05</span></a>
+            <a href="#art">Art Direction<span class="one six">06</span></a>
+            <hr>
             <a href="#download">Download Kit</a>
             <a href="#contact">Contact Us</a>
         </div>
@@ -102,7 +104,7 @@
         <!-- content -->
         <section>
             <div class="content">
-                <h2 class="c-title">Content</h2>
+                <h2 class="c-title">Contents</h2>
                 <ul class="c-list">
                     <li class="item">Brand Strategy</li>
                     <li class="item">Personality</li>
@@ -252,17 +254,17 @@
 
                     <div class="image-content">
                         <h4 class="tone" style="margin-bottom: 10px;">Primary Lockup</h4>
-                        <img src="./assets/IMG-11.png" alt="">
+                        <img class="i" src="./assets/IMG-11.png" alt="">
                     </div>
 
                     <div class="image-content">
                         <h4 class="tone clear1" style="margin-bottom: 10px;">Clearspace</h4>
-                        <img src="./assets/img-333.png" alt="">
+                        <img class="i" src="./assets/img-333.png" alt="">
                     </div>
 
                     <div class="image-content">
                         <h4 class="tone Secondary1" style="margin-bottom: 10px;">Secondary Lockups</h4>
-                        <img src="./assets/IMG-44.png" alt="">
+                        <img class="i" src="./assets/IMG-44.png" alt="">
                     </div>
 
                     <div class="image-content">
@@ -427,19 +429,19 @@
                         <div class="gradient-container">
                             <div class="gradient">
                                 <img src="./assets/gardient-1.png" alt="">
-                                <p class="color-name">Gradient 1</p>
+                                <p class="color-name g">Gradient 1</p>
                             </div>
                             <div class="gradient">
                                 <img src="./assets/gradient-2.png" alt="">
-                                <p class="color-name">Gradient 2</p>
+                                <p class="color-name g">Gradient 2</p>
                             </div>
                             <div class="gradient">
                                 <img src="./assets/gradient-3.png" alt="">
-                                <p class="color-name">Gradient 3</p>
+                                <p class="color-name g">Gradient 3</p>
                             </div>
                             <div class="gradient">
                                 <img src="./assets/gradient-4.png" alt="">
-                                <p class="color-name">Gradient 4</p>
+                                <p class="color-name g">Gradient 4</p>
                             </div>
 
                         </div>
@@ -498,7 +500,7 @@
                 <div class="size">
                     <div class="size-content">
                         <h4 class="tone">Sizing</h4>
-                        <p class="guide-para" style="max-width: 467px; margin-bottom: 40px;">Lorem ipsum dolor sit amet,
+                        <p class="guide-para" style="max-width: 419px; margin-bottom: 40px;">Lorem ipsum dolor sit amet,
                             consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt
                             ut
@@ -646,9 +648,20 @@
     </footer>
 
     <script>
-        document.getElementById('mobileToggle').addEventListener('click', function () {
-            document.getElementById('mobileMenu').classList.toggle('active');
+        const toggleBtn = document.getElementById('mobileToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        toggleBtn.addEventListener('click', function () {
+            mobileMenu.classList.toggle('active');
+
+            // Change button text or icon
+            if (mobileMenu.classList.contains('active')) {
+                toggleBtn.textContent = 'Close'; 
+            } else {
+                toggleBtn.textContent = 'Menu'; 
+            }
         });
+
     </script>
 
 </body>
